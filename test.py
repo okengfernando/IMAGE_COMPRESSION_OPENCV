@@ -15,7 +15,4 @@ class main_functions_testing(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()                   
-
-
-
     
