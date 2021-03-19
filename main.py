@@ -4,12 +4,17 @@ import cv2
 import numpy as np
 
 def Representational(r, g, b):
-    return (0.299 * r + 0.287 * g + 0.114 * b)
+    x = 0.299
+    y = 0.287
+    z = 0.114
+    
+    return (x * r + y * g + z * b)
 
 
 def calculate(img):
     b, g, r = cv2.split(img)
     pixelAt = Representational(r, g, b)
+    print(pixelAt)
     return pixelAt
 
 
