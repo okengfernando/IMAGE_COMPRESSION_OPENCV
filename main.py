@@ -3,7 +3,6 @@ import math
 import cv2
 import numpy as np
 
-
 def Representational(r, g, b):
     return (0.299 * r + 0.287 * g + 0.114 * b)
 
@@ -33,7 +32,7 @@ def main():
     # MSR = error_sum/(height*width)
     PSNR = -(10 * math.log10(error / (255 * 255)))
 
-    print("PSNR value is {}".format(PSNR))
+    print("PSNR value = {}".format(math.ceil(PSNR)))
 
 
 if __name__ == '__main__':
