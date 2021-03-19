@@ -12,6 +12,7 @@ def Representational(r, g, b):
 
 
 def calculate(img):
+    
     b, g, r = cv2.split(img)
     pixelAt = Representational(r, g, b)
     print(pixelAt)
