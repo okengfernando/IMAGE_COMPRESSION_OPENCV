@@ -36,9 +36,9 @@ def main():
     error = error / (height * width)
 
     # MSR = error_sum/(height*width)
-    final_PSNR = -(10 * math.log10(error / (255 * 255)))
+    P_SNR = -(10 * math.log10(error / (255 * 255)))
 
-    print("PSNR value = {}".format(final_PSNR))
+    print("PSNR value = {}".format(P_SNR))
 
 
 if __name__ == '__main__':
