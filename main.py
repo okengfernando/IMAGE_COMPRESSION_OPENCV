@@ -4,9 +4,9 @@ import cv2
 import numpy as np
 
 def Representational(r, g, b):
-    x = 0.299
-    y = 0.287
-    z = 0.114
+    x = 0.2990
+    y = 0.2870
+    z = 0.1140
     
     return (x * r + y * g + z * b)
 
@@ -21,6 +21,7 @@ def calculate(img):
 
 def main():
     # Loading images (orignal image and compressed image)
+    
     orignal_image = cv2.imread('orignal_image.png', 1)
     compressed_image = cv2.imread('compressed_image.png', 1)
 
