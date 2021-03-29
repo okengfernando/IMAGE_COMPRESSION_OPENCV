@@ -33,8 +33,8 @@ def main():
 
     diff = orignalPixelAt - compressedPixelAt
     error = np.sum(np.abs(diff) ** 2)
-
-    error = error / (height * width)
+    prod = height * width
+    error = error / prod
 
     # MSR = error_sum/(height*width)
     P_SNR = -(10 * math.log10(error / (255 * 255)))
