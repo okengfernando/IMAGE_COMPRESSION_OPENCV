@@ -10,7 +10,7 @@ class main_functions_testing(unittest.TestCase):
     def test_image_compression(self):
         pass
 
-    def test_image_oixel_toarray_conversion(self):
+    def test_image_pixel_toarray_conversion(self):
         pass
 
     def test_out_put_from_the_Representational_function(self):
